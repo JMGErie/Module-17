@@ -10,12 +10,16 @@ Assumptions:
 •	The column “duration” was discarded to have a more realistic predictive model as suggested by the authors.
 Data Analysis:
 The Baseline model was constructed. The results indicate that the model always predicts the majority class, but it fails to predict any instances of the minority class. 
+
 Baseline Model Metrics:
-Accuracy: 0.890507404709881
+Accuracy: 0.891
 Precision: 0.0
 Recall: 0.0
 F1-score: 0.0
+
 While the baseline model achieves a high accuracy by always predicting the majority class, it performs poorly in terms of precision, recall, and F1-score, particularly because it fails to capture any instances of the minority class. This underscores the importance of developing a more sophisticated model that can effectively predict both classes.
+
+
 Simple Logistic Regression Model:
 A simple logistic regression model with max_inter = 1000 was built and exhibited test accuracy of approximately 90.29% and a train accuracy of about 90.19%, indicating consistent predictive ability across both training and unseen test data. Despite a runtime of approximately 3509.41 seconds, its precision score of 0.625 reflects its capability to correctly identify positive outcomes around 62.5% of the time, while the recall score of 0.183 suggests it captures approximately 18.35% of actual positive instances. The F1 score of 0.284 underscores a balanced trade-off between precision and recall. 
 
